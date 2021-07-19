@@ -1,56 +1,302 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../css/bootstrap-4.4.1.css" />
-    <link rel="stylesheet" href="./Getting_Started.css" />
-  </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed;">
-      <img src="../images/Logo.jpg.png" />
-      <a class="navbar-brand" href="./Cryptol.php">CRYPTOL</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      ></button>
-      <div
-        class="collapse navbar-collapse"
-        id="navbarSupportedContent"
-        style="display: flex"
-      >
-        <a class="nav-link" href="./Exchange/Exchange.html">Exchange </a>
-        <a class="nav-link" href="./Getting_std/get_std.html"
-          >Getting Started
-        </a>
-        <a class="nav-link" href="./funds/funds.html">Balances </a>
-        <a class="nav-link" href="#">T&C</a>
-        <a class="nav-link" href="#">About Us</a>
-      </div>
-    </nav>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/bootstrap-4.4.1.css" />
+  <link rel="stylesheet" href="./Getting_Started.css" />
+  <style>
+    ::-webkit-scrollbar-track {
+       -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+       background-color: #F5F5F5;
+   }
+   
+    ::-webkit-scrollbar {
+       width: 0px;
+       background-color: #F5F5F5;
+   }
+   
+    ::-webkit-scrollbar-thumb {
+       background-color: #000000;
+   }
+</style>
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed;">
+    <img src="../images/Logo.png">
+    <a class="navbar-brand" href="../index.php">CRYPTOL</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: flex;">
+        <a class="nav-link" href="../Exchange/Exchange.html">Exchange </a>
+        <a class="nav-link" href="../Getting_Started/Getting_Started.html">Getting Started </a>
+        <a class="nav-link" href="../Balance/funds.html">Balances </a>
+        <a class="nav-link" href="../T&C/T&C.html">T&C</a>
+
+    </div>
+</nav>
+  <div class="vidWrapper">
     <div class="BackVid">
-    <video autoplay muted id="mideo">
-      <source src="./Videos/1.mp4" type="video/mp4" />
-    </video>
+      <video autoplay muted id="mideo">
+        <source src="./Videos/1.mp4" type="video/mp4" />
+      </video>
     </div>
 
-    <div class="MainText">LOrem ipsum<br>
-      <div class="SubText">Dolor sit amet</div>
-    </div>
-
-    <div class="nextCont">Scroll Up and Down this page to see the parallax scrolling effect.
-      This div is just here to enable scrolling.
-      Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    <div class="vidTextWrapper">
+      <div class="MainText">Crypto is about giving you choice, <pre></pre>freedom and opportunity. <br>
+        <div class="SubText">New to crypto or an experienced veteran?<br> We've got something for everyone here.</div>
       </div>
+    </div>
+  </div>
+
+  <div class="nextCont">
+    <div>
+      <div class="txtHdng">What is Cryptol</div>
+      <div class="subText mid"> Cryptol is an exchange built by traders, for traders.</div><br>
+      <div class="subText"> Cryptocurrency is not just about trading or making profits, it's about a new way of thinking. Join us on this mission to realize the full potential of crypto. With our tools, upgrade yourself to the new world.</div>
+    </div>
+    <div>
+      <div class="txtHdng">Get started</div>
+      <div class="subText">Below are some resources to dive into the crypto experience:</div>
+    </div>
+    <div class="subCont scroll-element js-scroll fade-in-bottom">
+    <div class="SubHdng">Crypto Basics:</div>
+
+    <div class="cardWrapper">
+      <div class="wrapper">
+        <div class="card"><img
+            src="./images/Cryptocurrency.jpg" />
+          <div class="Title">What is Crypto?</div>
+          <div class="info">
+            <h1>Cryptocurrency</h1>
+            <p>Bitcoin is a decentralized digital currency, without a central bank or single administrator, that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries.</p>
+            <button><a href="https://www.bitcoin.org">Read More</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="card"><img
+          src="./images/bitcoin.jpeg" />
+          <div class="Title">What is Bitcoin?</div>
+          <div class="info">
+            <h1>Bitcoin</h1>
+            <p>A cryptocurrency (or “crypto”) is a digital currency that can be used to buy goods and services, but uses
+              an online ledger with strong cryptography to secure online transactions.</p>
+              <button><a href="https://www.bitcoin.org">Read More</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="card"><img
+          src="./images/ethereum.jpg" />
+          <div class="Title">What is Ethereum?</div>
+          <div class="info">
+            <h1>Ethereum</h1>
+            <p>Ethereum is a decentralized, open-source blockchain with smart contract functionality. After Bitcoin, it is the largest cryptocurrency by market capitalization.</p>
+            <button><a href="https://www.bitcoin.org">Read More</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cardWrapper">
+      <div class="wrapper">
+        <div class="card"><img
+          src="./images/satoshi.jfif" />
+          <div class="Title">Who is Satoshi Nakamoto?</div>
+          <div class="info">
+            <h1>Creator of Bitcoin</h1>
+            <p>Satoshi Nakamoto is the name used by the presumed pseudonymous person or persons who developed bitcoin and authored the bitcoin white paper. </p>
+            <button><a href="https://www.bitcoin.org">Read More</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="card"><img
+          src="./images/CrypFiat.jpeg" />
+          <div class="Title">Crypto vs Fiat</div>
+          <div class="info">
+            <h1>New vs Old</h1>
+            <p>Fiat currencies have no intrinsic value, it is determined by the governments that issue them. Cryptocurrencies are a digital form of money and are decentralized, immutable, and trustless.</p>
+            <button><a href="https://www.bitcoin.org">Read More</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="card"><img
+          src="./images/F&G.png" />
+          <div class="Title">Fear and Greed</div>
+          <div class="info">
+            <h1>F&G Index</h1>
+            <p>The Crypto Fear and Greed Index provides a score of 0 to 100 for crypto market sentiment. It’s based on the CNNMoney Fear and Greed Index for analyzing the stock market. </p>
+            <button><a href="https://www.bitcoin.org">Read More</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  
+  <div class="subCont scroll-element js-scroll fade-in-bottom">
+    <div class="SubHdng">Trading Basics:</div>
+    <div class="cardWrapper">
+      <div class="wrapper">
+        <div class="card"><img
+            src="./images/portfolio.png" />
+          <div class="Title">What is a Portfolio</div>
+          <div class="info">
+            <h1>Portfolio</h1>
+            <p>A cryptocurrency portfolio is software that manages your inventory of online currency investments. It helps you track each coin's performance and provides you with analytical tools. </p>
+            <button><a href="https://www.bitcoin.org">Read More</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="card"><img
+          src="./images/indicators.jpg" />
+          <div class="Title">How to Identify Good Indicators?</div>
+          <div class="info">
+            <h1>Indicators</h1>
+            <p>Technical indicators are heuristic or pattern-based signals produced by the price, volume, and/or open interest of a security or contract used by traders who follow technical analysis.</p>
+            <button><a href="https://www.bitcoin.org">Read More</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="card"><img
+          src="./images/BullBear.png" />
+          <div class="Title">Bull and Bear Market</div>
+          <div class="info">
+            <h1>Up or Down?</h1>
+            <p>The terms "bear" and "bull" are thought to derive from the way in which each animal attacks its opponents. That is, a bull will thrust its horns up into the air, while a bear will swipe down.</p>
+            <button><a href="https://www.bitcoin.org">Read More</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="advdmr bgIupM htpckM">
+    <div class="txtHdng">Looking for more?</div>
+    <div class="subText">Join our academy to get to go from zero to hero in your crypto journey.</div>
+ 
+      <a href="https://academy.binance.com/en">
+        <button>Join</button>
+      </a>
+  </div>
+  
+  <div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer-inner">
+                <div class="brand footer-brand">
+                    <a href="#">
+                        <img class="header-logo-image" src="../images/logo.svg" alt="Logo">
+                    </a>
+                </div>
+                <ul class="footer-links list-reset">
+                  <li>
+                    <a href="mailto:satviksams@gmail.com">Contact</a>
+                </li>
+                <li>
+                    <a href="mailto:satviksams@gmail.com">About us</a>
+                </li>
+                <li>
+                    <a href="mailto:satviksams@gmail.com">FAQ's</a>
+                </li>
+                <li>
+                    <a href="mailto:satviksams@gmail.com">Support</a>
+                </li>
+                </ul>
+                <ul class="footer-social-links list-reset">
+                    <li>
+                        <a href="https://youtu.be/xvFZjo5PgG0">
+                            <span class="screen-reader-text">Facebook</span>
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z"
+                                fill="#0270D7" />
+                        </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtu.be/xvFZjo5PgG0">
+                            <span class="screen-reader-text">Twitter</span>
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z"
+                                fill="#0270D7" />
+                        </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtu.be/xvFZjo5PgG0">
+                            <span class="screen-reader-text">Google</span>
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z"
+                                fill="#0270D7" />
+                        </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer-copyright">&copy; 2021 Cryptol, all rights reserved</div>
+            </div>
+        </div>
+    </footer>
+</div>
+</div>
+
     <script src="./Getting_Started.js"></script>
-  </body>
+    <script>
+      const scrollElements = document.querySelectorAll(".js-scroll");
+
+const elementInView = (el, dividend = 1) => {
+  const elementTop = el.getBoundingClientRect().top;
+
+  return (
+    elementTop <=
+    (window.innerHeight || document.documentElement.clientHeight) / dividend
+  );
+};
+
+const elementOutofView = (el) => {
+  const elementTop = el.getBoundingClientRect().top;
+
+  return (
+    elementTop > (window.innerHeight || document.documentElement.clientHeight)
+  );
+};
+
+const displayScrollElement = (element) => {
+  element.classList.add("scrolled");
+};
+
+const hideScrollElement = (element) => {
+  element.classList.remove("scrolled");
+};
+
+const handleScrollAnimation = () => {
+  scrollElements.forEach((el) => {
+    if (elementInView(el, 1.25)) {
+      displayScrollElement(el);
+    } else if (elementOutofView(el)) {
+      hideScrollElement(el)
+    }
+  })
+}
+
+window.addEventListener("scroll", () => { 
+  handleScrollAnimation();
+});
+    </script>
+</body>
+
 </html>

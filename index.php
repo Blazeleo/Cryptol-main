@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	require_once('./Users/db_conn.php');
+	//phpinfo();
+    error_reporting(0);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 
@@ -5,32 +13,32 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Solid Template</title>
+    <title>Cryptol</title>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/main.css">
     <link href="./css/bootstrap-4.4.1.css" rel="stylesheet">
     <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="icon" type="image/png" href="images/favico.png" />
 </head>
 
 <body class="is-boxed has-animations">
     <div class="body-wrap">
         <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed;">
-            <img src="./images/Logo.jpg.png">
-            <a class="navbar-brand" href="./Cryptol.php">CRYPTOL</a>
+            <img src="./images/Logo.png">
+            <a class="navbar-brand" href="./index.php">CRYPTOL</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: flex;">
                 <a class="nav-link" href="./Exchange/Exchange.html">Exchange </a>
-                <a class="nav-link" href="./Getting_std/get_std.html">Getting Started </a>
-                <a class="nav-link" href="./funds/funds.html">Balances </a>
-                <a class="nav-link" href="#">T&C</a>
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="./Getting_Started/Getting_Started.html">Getting Started </a>
+                <a class="nav-link" href="./Balance/funds.html">Balances </a>
+                <a class="nav-link" href="./T&C/T&C.html">T&C</a>
 
             </div>
             <ul class="navbar-nav mr-auto thechange">
-                <li class="nav-item active"> <a class="nav-link" href="./login/reg/login.php">Login</a></li>
+                <li class="nav-item active"> <a class="nav-link" href="./Users/index.php">Login</a></li>
             </ul>
         </nav>
 
@@ -42,8 +50,8 @@
                             <h1 class="hero-title mt-0">Crypto is the future.<br> Be ahead with Cryptol</h1>
                             <p class="hero-paragraph">With our lightning fast transaction speeds, dollar-to-crypto
                                 guarantee and 24/7 support, you know you are getting only the best</p>
-                            <div class="hero-cta"><a class="button button-primary" href="#">Sign Up</a><a class="button"
-                                    href="#">Get started with cryptocurrency</a></div>
+                            <div class="hero-cta"><a class="button button-primary" href="./Users/signup.php">Sign Up</a><a class="button"
+                                    href="./Getting_Started/Getting_Started.html">Get started with cryptocurrency</a></div>
                         </div>
                         <div class="hero-figure anime-element">
                             <svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
@@ -156,7 +164,7 @@
 
                                     </div>
                                     <div class="pricing-table-cta mb-8">
-                                        <a class="kolClass" href="#">
+                                        <a class="kolClass" href="./Users/signup.php">
                                             <span></span>
                                             <span></span>
                                             <span></span>
@@ -175,7 +183,7 @@
                     <div class="cta-inner section-inner">
                         <h3 class="section-title mt-0">Reach out to our reliable 24/7 Support.</h3>
                         <div class="cta-cta">
-                            <a class="button button-primary button-wide-mobile" href="#">Get in touch</a>
+                            <a class="button button-primary button-wide-mobile" href="mailto:satviksams@gmail.com">Get in touch</a>
                         </div>
                     </div>
                 </div>
@@ -192,21 +200,21 @@
                     </div>
                     <ul class="footer-links list-reset">
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="mailto:satviksams@gmail.com">Contact</a>
                         </li>
                         <li>
-                            <a href="#">About us</a>
+                            <a href="mailto:satviksams@gmail.com">About us</a>
                         </li>
                         <li>
-                            <a href="#">FAQ's</a>
+                            <a href="mailto:satviksams@gmail.com">FAQ's</a>
                         </li>
                         <li>
-                            <a href="#">Support</a>
+                            <a href="mailto:satviksams@gmail.com">Support</a>
                         </li>
                     </ul>
                     <ul class="footer-social-links list-reset">
                         <li>
-                            <a href="#">
+                            <a href="mailto:satviksams@gmail.com">
                                 <span class="screen-reader-text">Facebook</span>
                                 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -216,9 +224,10 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="mailto:satviksams@gmail.com">
                                 <span class="screen-reader-text">Twitter</span>
                                 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+
                                     <path
                                         d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z"
                                         fill="#0270D7" />
@@ -226,7 +235,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="mailto:satviksams@gmail.com">
                                 <span class="screen-reader-text">Google</span>
                                 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -236,7 +245,7 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="footer-copyright">&copy; 2019 Solid, all rights reserved</div>
+                    <div class="footer-copyright">&copy; 2021 Cryptol, all rights reserved</div>
                 </div>
             </div>
         </footer>
@@ -244,5 +253,22 @@
 
     <script src="./js/main.min.js"></script>
 </body>
+<script>
+    function change() {
+        document.getElementsByClassName("thechange")[0].innerHTML = "<div class='dropdown'><button class='dropbtn'><?php echo $_SESSION['name']; ?></button><div class='dropdown-content'><a class='logout' href='./Users/logout.php'>Log out</a></div></div>"
+    }
+</script>
 
+<?php
+if ($_SESSION['loggedin'] == "TRUE")
+{
+echo '<script>',
+'change();',
+'</script>';
+}
+else
+echo '<script></script>';
+
+
+?>
 </html>

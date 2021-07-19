@@ -1,38 +1,434 @@
-.BackVid{
-    display:flex;
-    max-width: 100vw;
-    max-height: 100vh;
-    height:100%;
-    background-attachment: fixed;
+pre{
+  font-size: 0 !important;
+    line-height: 0 !important;
+    margin-bottom:0 !important;
+    max-width: 0 !important;
+    overflow: auto;
+    padding: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
-video{
-    position: absolute;
-    background-size:contain;
-    min-width: 100%;
-    width: auto;
-    filter: brightness(50%);
+/* Layout*/
+.BackVid {
+  display: flex;
+  max-width: 100vw;
+  max-height: 100vh;
+  height: 100%;
+  background-attachment: fixed;
 }
 
-.MainText{
-    text-align: center;
-    font-size: 95px;
-    display: block;
-    position: relative;
-    margin-top: 20%;
-    color:white;
+video {
+  position: absolute;
+  background-size: contain;
+  min-width: 100%;
+  width: auto;
+  filter: brightness(50%);
 }
-
-.SubText
+.navelems{
+    position:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  align-items: center;
+}
+ /* .vidTextWrapper
 {
-    color:rgb(165, 171, 177);
-    font-size: 40px;
+    position:relative;
 }
 
-.nextCont{
-    height:30em;
-    background-color:pink;
-    position: relative;
+.vidWrapper
+{
+    width:100%;
+    position:fixed;
+}  */
+
+.MainText {
+  text-align: center;
+  font-size: 80px;
+  line-height: 90%;
+  display: block;
+  position: relative;
+  margin-top: 20%;
+  color: white;
+}
+
+.SubText {
+  padding-top: 0.3em;
+  color: rgb(165, 171, 177);
+  font-size: 40px;
+  line-height: 140%;
+}
+
+.nextCont {
+  margin-top: 13%;
+  padding: 1em 3em;
+  height: 100%;
+  background-color: rgb(33, 36, 37);
+  color: white;
+  position: relative;
+  font-size: 32px;
+  text-align: center;
+}
+
+.SubHdng {
+    
+  font-family: "Arial Black", sans-serif;
+  margin-top: 0.5em;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5em;
+  letter-spacing: -1px;
+  background-color: black;
+  color: white;
+}
+
+.subCont
+{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 2em;
+    height:auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/*Intro*/
+.subText{    
+  padding-top: 0.3em;
+  color: white;
+  font-size: 28px;
+  line-height: 140%;
+  text-align: left;
+}
+
+.mid{
+    text-align: center !important;
+}
+
+.txtHdng
+{
+  font-family: "Arial Black", sans-serif;
+  margin-top: 0.5em;
+  text-align: left;
+  width: 100%;
+  font-size: 1.5em;
+  letter-spacing: -1px;
+  color: white;
+}
+
+
+/* Card */
+
+.cardWrapper
+{
+    display:flex;
+    flex-direction: row;
+}
+
+.wrapper {
+    margin-top: 2em;
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+}
+
+.card {
+  width: 90%;
+  height: 360px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  background: white;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+.card:hover {
+  transform: translateY(20px);
+}
+.card:hover:before {
+  opacity: 1;
+}
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.card:hover .Title{
+    opacity:0;
+    transition: 0.4s ease-out;
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  filter:brightness(35%);
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+.card .info {
+  position: absolute;
+  padding-left: 10%;
+  padding-top: 10%;
+  z-index: 3;
+  color: white !important;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+.card .info h1 {
+  margin: 0px;
+}
+.card .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+.card .info button{
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.card .info a:hover {
+    text-decoration: none;
+  transition: 0.4s ease;
+  background: dodgerblue;
+  color: white;
+}
+.card .info button:hover {
+    
+  transition: 0.4s ease;
+    background: dodgerblue;
+    color: white;
+  }
+.Title
+{
+    color: rgba(252, 252, 252,20);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: white; */
+    /* border-radius: 50px; */
+    margin-top: -0.7em;
+    padding-top:40%;
+    z-index:2;
     font-size: 32px;
+    width: 100%;
+}
+
+/*Scroll*/
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans:wght@300&display=swap");
+
+/*General styling for structure*/
+
+.scroll-container {
+  height: 100vh;
+  min-height: 450px;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.scroll-caption {
+  margin: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+  .scroll-container,
+  .scroll-container:nth-of-type(even) {
+    flex-direction: column;
+    align-content: inherit;
+  }
+
+  .scroll-element {
+    height: 100%;
+  }
+
+  .scroll-element,
+  .scroll-caption {
+    width: 100%;
+  }
+}
+/**Styling scrollable elements*/
+
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.scrolled.fade-in {
+  animation: fade-in 1s ease-in-out both;
+}
+
+.scrolled.fade-in-bottom {
+  animation: fade-in-bottom 1s ease-in-out both;
+}
+
+.scrolled.slide-left {
+  animation: slide-in-left 1s ease-in-out both;
+}
+
+.scrolled.slide-right {
+  animation: slide-in-right 1s ease-in-out both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-2-11 23:32:31
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Looking for more*/
+.advdmr
+{
+    border-color: rgb(133, 123, 108);
+}
+
+.bgIupM {
+    border: 2px solid rgb(133, 123, 108);
+    border-radius: 15px;
+    grid-column: 1 / -1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 26.6667px;
+}
+.htpckM > * {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.bgIupM form {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 1 1 0%;
+}
+
+.bgIupM button {
+    white-space: nowrap;
+    width: auto;
+    font-size: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+
+    display: block;
+    visibility: visible;
+    outline: 0px;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    width: 190px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(43, 43, 60);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.33px;
     text-align: center;
+    border: 2px solid rgb(43, 43, 60);
+    transition: border-color 300ms ease-in 0s, color 300ms ease-in 0s, background-color 300ms ease-in 0s;
+    white-space: nowrap;
+}
+
+.bgIupM button:hover{
+    transition: 1s;
+    background-color: royalblue;
+    color: white;
+}
+
+.container {
+  margin: 0px !important;
+  max-width: none !important;
+  padding: 0px 3em !important;
+}
+
+.frame {
+  height: auto !important;
+}
+
+.site-footer-inner {
+  width: 100% !important;
+}
+
+a{
+  text-decoration: none !important;
 }
