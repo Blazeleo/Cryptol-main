@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body onload="loadfn()" style="margin: 0px;">
+    <div id="loading"></div>
+    <iframe src="./index.php" style="height: 100vh; width: 100%; border: 0px; padding: 0px;margin: 0px;"></iframe>>
+    <script src="" async defer></script>
+</body>
+
+<script>
+    var preload = document.getElementById('loading');
+
+    function loadfn() {
+        preload.style.display = "none";
+    }
+</script>
+
+</html>

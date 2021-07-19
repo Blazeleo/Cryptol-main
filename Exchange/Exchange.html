@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../css/bootstrap-4.4.1.css" rel="stylesheet">
     <link href="./Exchange.css" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" href="images/favico.png" />
     <script>
         var state = "Buy";
         var Buy = function () {
@@ -39,7 +41,9 @@
     </script>
 </head>
 
-<body>
+
+<body onload="loadfn()">
+    <div id="loading"></div> 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <img src="../images/Logo.png">
         <a class="navbar-brand" href="../index.php">CRYPTOL</a>
@@ -320,7 +324,7 @@
         </div>
 
         <div class="row">
-            <div>
+            <!-- <div>
                 <div class="react-grid-item react-draggable cssTransforms react-resizable" style="z-index: 3; width: 317px; height: 356px; position: absolute; transform: translate(20px, -100px);">
                     <div class="css-1y6ctll">
                         <div class="draggableHandle css-158mddz">
@@ -539,7 +543,9 @@
                             </div>
                         </div>
                     </div><span class="react-resizable-handle react-resizable-handle-se"></span></div>
-            </div>
+            </div> -->
+            
+			<img class="tradeInfo" src="btc.gif"/>
             <div class="col-4">
                 <div class="sc-bdVaJa sc-krvtoX eqmIRJ">
                     <div class="sc-daURTG cLPynA sc-bdVaJa gUKorA">
@@ -614,5 +620,13 @@
         // while (0) {
         //     hello();
         // }
+</script>
+
+<script>
+    var preload = document.getElementById('loading');
+
+    function loadfn() {
+        preload.style.display = "none";
+    }
 </script>
 </html>

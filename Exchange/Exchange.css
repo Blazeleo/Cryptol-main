@@ -1,6 +1,6 @@
 /*Chart and listing*/
 :root {
-  --bgcol: rgb(29, 32, 38);
+  --bgcol: rgb(29, 32, 38) !important;
 }
 
 .navbar {
@@ -1065,4 +1065,8 @@ div.left {
 .contract-trigger:before {
   width: 200%;
   height: 200%;
+}
+
+.row .tradeInfo{
+  width:65%;
 }

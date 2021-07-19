@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/bootstrap-4.4.1.css" />
   <link rel="stylesheet" href="./Getting_Started.css" />
+  
+  <link rel="icon" type="image/png" href="images/favico.png" />
   <style>
     ::-webkit-scrollbar-track {
        -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
@@ -28,8 +30,8 @@
 </style>
 </head>
 
-<body>
-  
+<body onload="loadfn()">
+  <div id="loading"></div> 
   <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed;">
     <img src="../images/Logo.png">
     <a class="navbar-brand" href="../index.php">CRYPTOL</a>
@@ -298,5 +300,11 @@ window.addEventListener("scroll", () => {
 });
     </script>
 </body>
+<script>
+  var preload = document.getElementById('loading');
 
+  function loadfn() {
+      preload.style.display = "none";
+  }
+</script>
 </html>
